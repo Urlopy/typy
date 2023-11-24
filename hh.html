@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Różne typy urlopów</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
+display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .vacation-type {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      width: 60%;
+      max-width: 600px;
+      cursor: pointer;
+    }
+    .vacation-type h2 {
+      color: #ff6600;
+      padding: 20px;
+      margin: 0;
+      border-bottom: 1px solid #eee;
+    }
+    .vacation-type p {
+      color: #555;
+      line-height: 1.6;
+      padding: 20px;
+      display: none;
+    }
+    .vacation-type.active p {
+      display: block;
+    }
+.vacation-type {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+      width: 60%;
+      max-width: 600px;
+      transition: transform 0.3s ease-in-out;
+    }
+    .vacation-type:hover {
+      transform: translateY(-5px);
+    }
+    .vacation-type h2 {
+      color: #ff6600;
+      margin-bottom: 10px;
+    }
+    .vacation-type p {
+      color: #555;
+      line-height: 1.6;
+    }
+    .vacation-type strong {
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+<h1>Rodzaje urlopów</h1>
+<div class="vacation-type" onclick="toggleDescription(this)">
+    <center><h2>Urlop Bezpłatny</h2></center>
+    <p>
+      
+Urlop bezpłatny to czas, gdy pracownik jest zwolniony z obowiązku świadczenia pracy, jednak nadal pozostaje w zatrudnieniu. W tym okresie nie otrzymuje wynagrodzenia, ale zachowuje niektóre prawa pracownicze. Może być przyznany z różnych powodów, na przykład do wykonywania pracy u innego pracodawcy lub dla własnych celów. Jeśli trwa dłużej niż 30 dni, może wpłynąć na długość urlopu wypoczynkowego. Wymaga pisemnego wniosku pracownika i zgody pracodawcy. Pracodawca nie może przymusowo wysłać pracownika na ten urlop. Przekroczenie 3 miesięcy może dać pracodawcy prawo do odwołania pracownika z ważnych powodów.
+    </p>
+  </div>
+   <div class="vacation-type" onclick="toggleDescription(this)">
+    <center><h2>Urlop Na Żądanie</h2></center>
+    <p>
+      
+Urlop na żądanie to swego rodzaju elastyczny czas wolny, który pracownik może wziąć w ciągu roku. Może trwać maksymalnie 4 dni i stanowi część urlopu wypoczynkowego – podstawowego 20 lub 26 dniowego.
+
+Ważne, że pracownik korzysta z tego urlopu, posiadając już prawo do urlopu wypoczynkowego. Powinien poinformować pracodawcę o swojej chęci skorzystania z niego najpóźniej w dniu jego rozpoczęcia. Forma zgłoszenia może być różna – może to być kontakt telefoniczny, elektroniczny czy nawet za pośrednictwem kogoś innego. Urlop na żądanie nie musi być planowany z dużym wyprzedzeniem, ale pracodawca ma prawo odmówić jego udzielenia w szczególnych sytuacjach.
+
+Pracownik może wykorzystać ten urlop w dowolnym momencie, nawet w okresie wypowiedzenia. Ważne jest, że niewykorzystany urlop na żądanie nie przechodzi na kolejny rok, więc jeśli pracownik w danym roku nie skorzysta z tego prawa, nie będzie mógł przesunąć tych dni na rok następny.
+    </p>
+  </div>
+  <div class="vacation-type" onclick="toggleDescription(this)">
+    <center><h2>Urlop Okolicznościowy</h2></center>
+    <p>
+      Urlop okolicznościowy to specjalny urlop przyznawany pracownikowi z powodu ważnych wydarzeń osobistych. Trwa krótko i pracownik otrzymuje wynagrodzenie w czasie jego trwania. Aby skorzystać z tego urlopu, pracownik musi złożyć dokumentowany wniosek, często załączając akt urodzenia, ślubu, czy dokument potwierdzający zdarzenie. Długość urlopu zależy od istotności wydarzenia i stopnia pokrewieństwa z osobą, którą dotyczy ta okoliczność. Na przykład:
+</p><ul>
+<p>・Ślub pracownika - zazwyczaj 2 dni.</p>
+<p>・Narodziny dziecka - zwykle 2 dni.</p>
+<p>・Ślub dziecka - często 1 dzień.</p>
+</ul><p>
+Śmierć lub pogrzeb bliskiej osoby - zwykle 1 lub 2 dni, w zależności od stopnia pokrewieństwa.
+Wartość tego urlopu polega na umożliwieniu pracownikowi uczestniczenia w istotnych dla niego wydarzeniach osobistych.
+    </p>
+  </div>
+   <div class="vacation-type" onclick="toggleDescription(this)">
+    <center><h2>Urlop na poszukiwanie pracy</h2></center>
+    <p>
+      Urlop na poszukiwanie pracy to forma wsparcia dla pracownika, któremu wypowiedziano umowę o pracę z zachowaniem co najmniej dwutygodniowego okresu wypowiedzenia, zgodnie z przepisami Kodeksu pracy. Długość tego urlopu jest uzależniona od długości okresu wypowiedzenia:
+</p><ul>
+<p>・W przypadku dwutygodniowego lub jednomiesięcznego okresu wypowiedzenia, pracownikowi przysługują 2 dni robocze</p>
+<p>・Jeśli okres wypowiedzenia wynosi 3 miesiące, przysługują 3 dni robocze na poszukiwanie nowej pracy.</p>
+</ul><p>
+Ten czas pozwala pracownikowi na aktywne poszukiwanie zatrudnienia, a jednocześnie jest opłacany, co może złagodzić skutki utraty pracy.
+    </p>
+  </div>
+ <div class="vacation-type" onclick="toggleDescription(this)">
+    <center><h2>Urlop szkoleniowy</h2></center>
+    <p>
+      
+Urlop szkoleniowy to uprawnienie pracownika, które może być wykorzystane do podnoszenia kwalifikacji zawodowych z własnej inicjatywy lub z inicjatywy pracodawcy. Przysługuje on w następujących wymiarach:
+</p><ul>
+<p>・6 dni na przygotowanie do egzaminu eksternistycznego, maturalnego lub potwierdzającego kwalifikacje zawodowe</p>
+<p>・21 dni na napisanie pracy dyplomowej oraz przygotowanie się do egzaminu dyplomowego</p>
+</ul><p>
+W trakcie urlopu szkoleniowego pracownik otrzymuje wynagrodzenie zgodnie z ustaleniami dokonanymi przez strony, czyli pracownika i pracodawcę w umowie lub porozumieniu. Dni spędzone na tym urlopie nie wpływają na urlop wypoczynkowy, gdyż ma on odrębny charakter od urlopu wypoczynkowego.
+
+Przeznaczony jest to na rozwój zawodowy pracownika, umożliwiając mu podnoszenie kwalifikacji bez utraty wynagrodzenia.
+    </p>
+  </div>
+<div class="vacation-type" onclick="toggleDescription(this)">
+    <center><h2>Urlop Rodzicielski</h2></center>
+    <p>
+      Urlop rodzicielski to uprawnienie, które nabywa się po wykorzystaniu urlopu macierzyńskiego. Jego długość zależy od liczby urodzonych dzieci:
+</p><ul>
+<p>・41 tygodni w przypadku urodzenia jednego dziecka</p>
+<p>・43 tygodni, jeśli urodzi się więcej niż jedno dziecko.</p>
+</ul><p>
+Rodzice dziecka z zaświadczeniem, jak to określa ustawa o wsparciu kobiet w ciąży i rodzin "Za życiem", mają prawo do urlopu rodzicielskiego w wymiarze do:
+
+</p><ul>
+<p>・65 tygodni w przypadku urodzenia jednego dziecka przy jednym porodzie</p>
+<p>・67 tygodni w przypadku porodu mnogiego.</p>
+</ul><p>
+Każdy z rodziców ma prawo do wyłącznych 9 tygodni z tego urlopu, których nie można przenieść na drugiego rodzica.
+Aby skorzystać z urlopu rodzicielskiego, pracownik musi złożyć odpowiedni wniosek, najlepiej w terminie 21 dni po porodzie. Dzięki temu otrzymuje on świadczenie w takiej samej wysokości przez cały okres pobierania zasiłku macierzyńskiego. Wniosek o rozpoczęcie urlopu należy dostarczyć pracodawcy maksymalnie 21 dni przed jego planowanym rozpoczęciem.
+    </p>
+  </div>
+  <div class="vacation-type" onclick="toggleDescription(this)">
+    <center><h2>Urlop Ojcowski</h2></center>
+    <p>
+      Urlop ojcowski jest wyłącznie dla ojca dziecka i nie może być przeniesiony na matkę. Pracodawca może go udzielić po otrzymaniu odpowiedniego wniosku, nie później niż 7 dni przed jego rozpoczęciem. Ma stały wymiar 14 dni, który można podzielić na dwie równe części. Prawo do tego urlopu wygasa po ukończeniu przez dziecko 24 miesiąca życia.
+    </p>
+  </div>
+  <div class="vacation-type" onclick="toggleDescription(this)">
+    <center><h2>Urlop Macierzyński</h2></center>
+    <p>
+      Urlop macierzyński ma na celu ochronę zdrowia kobiety w ciąży, regenerację po porodzie oraz opiekę nad dzieckiem w pierwszych miesiącach życia. Jego długość zależy od liczby dzieci urodzonych w jednym porodzie:
+
+<ul>
+<p>・20 tygodni przy jednym dziecku</p>
+<p>・31 tygodni przy narodzinach dwojga dzieci</p>
+<p>・33 tygodnie przy narodzinach trojga dzieci</p>
+<p>・35 tygodni przy narodzinach czworga dzieci</p>
+<p>・37 tygodni przy narodzinach pięciorga lub więcej dzieci</p>
+</ul>
+<p>
+Część urlopu można wykorzystać 6 tygodni przed porodem. Prawo do urlopu macierzyńskiego przysługuje matce dziecka lub kobiecie, która adoptuje dziecko. Ojciec dziecka także może skorzystać z części urlopu, którą może przejąć od matki po upływie odpowiednich terminów.
+
+Przekazanie części urlopu ojcu jest możliwe po upływie:
+<ul>
+<p>・14 tygodni po porodzie lub</p>
+<p>・8 tygodni, jeśli matka nie jest zdolna do samodzielnej egzystencji</p>
+</ul>
+<p>
+W przypadku śmierci matki podczas urlopu macierzyńskiego, część niewykorzystanego urlopu przechodzi na ojca dziecka. Natomiast zgon matki w trakcie porodu skutkuje przejęciem całego urlopu przez ojca dziecka.
+    </p>
+  </div>
+    <div class="vacation-type" onclick="toggleDescription(this)">
+    <center><h2>Urlop Opiekuńczy</h2></center>
+    <p>
+      Nowe przepisy od 2023 roku gwarantują pracownikom urlop opiekuńczy, umożliwiający zapewnienie wsparcia lub opieki osobie bliskiej, potrzebującej znacznej pomocy ze względów zdrowotnych Ten rodzaj urlopu obejmuje opiekę nad członkiem rodziny, takim jak dzieci, rodzice, małżonek lub partner życiowy mieszkający razem. Wymiar tego urlopu to 5 dni w roku, które można wykorzystać jednorazowo lub pojedynczo. Urlop opiekuńczy jest udzielany na wniosek pracownika złożony co najmniej dzień przed planowanym terminem. Warto zaznaczyć, że dni wolne w ramach tego urlopu nie są wynagradzane.
+    </p>
+  </div>
+    <div class="vacation-type" onclick="toggleDescription(this)">
+    <center><h2>Urlop Rodzicielski</h2></center>
+    <p>
+      Urlop rodzicielski przysługuje po wykorzystaniu urlopu macierzyńskiego. Jego długość uzależniona jest od liczby urodzonych dzieci w jednym porodzie:
+</p><ul>
+<p>・Przy narodzinach jednego dziecka – 41 tygodni</p>
+<p>・Przy urodzeniu więcej niż jednego dziecka – 43 tygodnie.</p>
+</ul><p>
+Pracownicy, których dziecko jest objęte zaświadczeniem zgodnie z ustawą o wsparciu kobiet w ciąży i rodzinie, mogą skorzystać z:
+</p><ul>
+<p>・Przy narodzinach jednego dziecka – 65 tygodni</p>
+<p>・Przy urodzeniu więcej niż jednego dziecka – 67 tygodni.</p>
+</ul><p>
+Każdy z rodziców ma prawo do wyłącznie 9 tygodni urlopu rodzicielskiego z tego dostępnego wymiaru. Konieczne jest złożenie wniosku najpóźniej 21 dni po porodzie, co pozwala zachować pełne świadczenie z zasiłku macierzyńskiego. Pracownik powinien dostarczyć wniosek o urlop rodzicielski na co najmniej 21 dni przed jego planowanym rozpoczęciem.
+    </p>
+  </div>
+   <div class="vacation-type" onclick="toggleDescription(this)">
+    <center><h2>Opieka Nad Dzieckiem</h2></center>
+    <p>
+      
+Pracownik, który wychowuje dziecko do 14. roku życia, niezależnie od płci, ma prawo do dodatkowego urlopu w postaci 16 godzin lub 2 dni płatnego zwolnienia od pracy, zgodnie z art. 188 Kodeksu pracy. To specjalne zwolnienie nie jest związane z urlopem wypoczynkowym i nie wpływa na jego wymiar podstawowy, który wynosi standardowo 20 lub 26 dni. Jest to dodatkowy czas na opiekę nad dzieckiem, który przysługuje pracownikowi, niezależnie od już przyznanego mu urlopu.
+Ważne jest, że rodzic składający wniosek o udzielenie tego typu urlopu musi zadeklarować, czy chce skorzystać z niego w formie dni wolnych od pracy czy też w postaci skrócenia czasu pracy w konkretnych godzinach.
+    </p>
+  </div>
+   <div class="vacation-type" onclick="toggleDescription(this)">
+    <center><h2>Urlop Wychowawczy</h2></center>
+    <p>
+      
+Urlop wychowawczy to czas, który pracownik może przeznaczyć na opiekę nad małym dzieckiem, jednak nie dłużej niż do momentu, gdy dziecko skończy 6 lat. Wyjątkiem jest sytuacja, gdy dziecko ze względu na niepełnosprawność potrzebuje dłuższej opieki; w takich przypadkach urlop można wykorzystać do momentu, gdy dziecko osiągnie 18 lat.
+
+Aby skorzystać z urlopu wychowawczego, pracownik musi przepracować co najmniej 6 miesięcy w danym roku kalendarzowym, licząc również wcześniejsze okresy zatrudnienia.
+
+Wymiar urlopu wychowawczego może wynosić do 3 lat. Jednak jeden z rodziców ma prawo do skorzystania z maksymalnie 35 miesięcy, pozostały rodzic powinien wykorzystać co najmniej 1 miesiąc. Ważne jest, że ten rodzaj urlopu może być udzielany w częściach, ale nie więcej niż pięciokrotnie.
+    </p>
+  </div>
+  <script>
+    function toggleDescription(element) {
+      if (element.classList.contains('active')) {
+        element.classList.remove('active');
+      } else {
+        var allVacations = document.querySelectorAll('.vacation-type');
+        allVacations.forEach(function(vacation) {
+          vacation.classList.remove('active');
+        });
+        element.classList.add('active');
+      }
+    }
+  </script>
+</body>
+</html>
